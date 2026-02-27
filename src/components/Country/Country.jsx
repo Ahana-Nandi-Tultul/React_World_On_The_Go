@@ -5,9 +5,9 @@ const Country = ({country, handleVisitedCountries}) => {
     // console.log(country?.area?.area);
     const [visited, setVisited] = useState(false)
     const handleVisited = (country) =>{
-        console.log(country)
+        // console.log(country)
         setVisited(!visited);
-        handleVisitedCountries();
+        handleVisitedCountries(country);
     }
 
     return (
